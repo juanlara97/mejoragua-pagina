@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Store - TecDock</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="row justify-content-center" id="banner">
+          <img src="src/prueba.png" id="prueba">
+
+          <h1 id="marca">TECDOCK</h1>&nbsp&nbsp&nbsp&nbsp
+          <img src="src/logo.png" id="logo">
+          <img src="src/prueba2.png" id="prueba2">
+          <div class="w-100"></div>
+          <h4 id="slogan">Soluciones tecnológicas y mucho mas...</h4>
+        </div>
+
+        <div class="row justify-content-between" id="navegacion">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categorias.html">Categorias</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" onclick="abrir_tienda()">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="foro.html">Foro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="row no-gutters align-self-start mt-2 mr-3">
+            <a class="nav-link" id="sesion_text" href="login.html">Iniciar Sesión</a>
+            <img src="src/user.png" id="sesion">
+            <a href="carrito.html"><img src="src/carrito.png" id="sesion" class="ml-3"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img src="src/prod02.jpg" class="detalle">
+      </div>
+      <div class="col">
+        <h1 class="mt-5">XIAOMI MI 8 SE</h1>
+        <h6>* Snapdragon 710 GPU Adreno 616</h6>
+        <h6>* RAM: 4 / 6 GB LPDDR4X</h6>
+        <h6>* Pantalla 5,88" FullHD+ SuperAMOLED</h6>
+        <h6>* Batería: 3.120 mAh + QC 3.0</h6>
+        <h6>* Cámaras: Trasera: 12+5MP, f/1.9+f/2.0, AI / Frontal: 20MP, f/2.0</h6>
+        <h6>* Software: Android 8.1 Oreo MIUI 10</h6>
+        <h6>* Almacenamiento: 64 GB</h6>
+        <h4 class="mt-3">Precio: s/ 800.00</h4>
+        <button class="btn btn-success" onclick="cantidad('0','#p2')">-</button>
+        <span id="p2" class="badge badge-warning">1</span>
+        <button class="btn btn-success" onclick="cantidad('1','#p2')">+</button><br><br>
+        <button type="button" name="button" class="btn btn-primary mb-5" onclick="agregar('#btn_prod02')">COMPRAR</button>
+      </div>
+    </div>
+
+    <div class="row bg-dark pt-5 pl-2 pr-2 pb-2 justify-content-center" id="pie">
+      <div class="col">
+        <h5>Donaciones:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://atom.io/" target="_blank">Paypal - cta: 958613154</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">BCP - cta: 4562989436646</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Banco de la Nación - 89852</a></li>
+          <li><a class="footer-item" href="https://fontawesome.com/" target="_blank">Scotiabank - cta: 555555</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Recursos de Diseño:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://atom.io/" target="_blank">Software Atom</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Página Iconfinder</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Cartillas de Colores</a></li>
+          <li><a class="footer-item" href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+          <li><a class="footer-item" href="https://www.w3.org/" target="_blank">World wide web consortium</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Sigueme en:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://www.facebook.com" target="_blank"><img class="icon" src="src/fb.png">&nbsp Facebook - TECDOCK</a></li>
+          <li><a class="footer-item" href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="icon" src="src/instagram.png">&nbsp Instagram - @tecdock</a></li>
+          <li><a class="footer-item" href="https://twitter.com/?lang=es" target="_blank"><img class="icon" src="src/twitter.png">&nbsp Twitter - @tec.dock</a></li>
+          <li><a class="footer-item" href="https://www.youtube.com/" target="_blank"><img class="icon" src="src/youtube.png">&nbsp Youtube - Canal Principal</a></li>
+          <li><a class="footer-item" href="https://pe.linkedin.com/" target="_blank"><img class="icon" src="src/linkedin.png">&nbsp Linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Información de Contacto:</h5>
+        <ul>
+          <li><a class="footer-item" href=""><img class="icon" src="src/propietario.png">&nbsp TECDOCK</a></li>
+          <li><a class="footer-item" href="https://www.google.com/maps/place/Ferre%C3%B1afe/@-6.637259,-79.799964,14.75z/data=!4m5!3m4!1s0x904c94d6cf0576e7:0x73d7d3c19c97bcd2!8m2!3d-6.6340676!4d-79.7869714" target="_blank">
+            <img class="icon" src="src/house.png">&nbsp Chiclayo - Lambayeque</a></li>
+          <li><a class="footer-item"><img class="icon" src="src/phone.png">&nbsp cel: 950240937</a></li>
+          <li><a class="footer-item" href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#" target="_blank">
+            <img class="icon" src="src/email.png">&nbsp E-mail: tecdock@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="col col-auto">
+        <h6>©2019 Copyright - Todos los derechos reservados</h6>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    login();
+  </script>
+</body>
+</html>

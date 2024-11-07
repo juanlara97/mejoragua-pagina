@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Store - TecDock</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="row justify-content-center" id="banner">
+          <img src="src/prueba.png" id="prueba">
+
+          <h1 id="marca">TECDOCK</h1>&nbsp&nbsp&nbsp&nbsp
+          <img src="src/logo.png" id="logo">
+          <img src="src/prueba2.png" id="prueba2">
+          <div class="w-100"></div>
+          <h4 id="slogan">Soluciones tecnológicas y mucho mas...</h4>
+        </div>
+
+        <div class="row justify-content-between" id="navegacion">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="categorias.html">Categorias</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" onclick="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="foro.html">Foro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="row no-gutters align-self-start mt-2 mr-3">
+            <a class="nav-link" id="sesion_text" href="login.html">Iniciar Sesión</a>
+            <img src="src/user.png" id="sesion">
+            <a href="carrito.html"><img src="src/carrito.png" id="sesion" class="ml-3"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Principal<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accesorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hogar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Audio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV y Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ordenadores</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div id="anuncios" class="carousel slide mt-2 mb-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#anuncios" data-slide-to="0" class="active"></li>
+          <li data-target="#anuncios" data-slide-to="1"></li>
+          <li data-target="#anuncios" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="src/anuncio01.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="src/anuncio02.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="src/anuncio03.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#anuncios" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#anuncios" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+      <div class="col" align="center">
+          <img class="prod" src="src/prod02.jpg">
+          <div class="form-group">
+                  <label for="prod02">Xiaomi Mi 8 Se</label><br>
+                  <label for="prod02">S/.800</label><br>
+                  <button class="btn btn-primary" id="btn_prod02" onclick="abrir('prod02.html')">LEER MÁS..</button>
+          </div>
+      </div>
+
+      <div class="col" align="center">
+          <img class="prod" src="src/prod03.jpg">
+          <div class="form-group">
+                  <label for="prod03">Xiaomi Mi 9</label><br>
+                  <label for="prod03">S/.2700</label><br>
+                  <button class="btn btn-primary" id="btn_prod03" onclick="abrir('prod03.html')">LEER MÁS..</button>
+          </div>
+      </div>
+
+      <div class="col" align="center">
+          <img  class="prod" src="src/prod01.jpg">
+          <div class="form-group">
+            <label for="btn_prod01">Xiaomi Mi A2</label><br>
+            <label for="btn_prod01">S/.700</label><br>
+            <button class="btn btn-primary" id="btn_prod01" onclick="abrir('prod01.html')">LEER MÁS..</button>
+          </div>
+      </div>
+
+      <div class="col" align="center">
+          <img class="prod" src="src/prod04.jpg">
+          <div class="form-group">
+                <label for="prod04">Redmi Note 7</label><br>
+                <label for="prod04">S/.900</label><br>
+                <button class="btn btn-primary" id="btn_prod04" onclick="abrir('prod04.html')">LEER MÁS..</button>
+          </div>
+      </div>
+
+      <div class="col" align="center">
+          <img class="prod" src="src/prod05.jpg">
+          <div class="form-group">
+            <label for="prod05">Redmi Note 6 Pro</label><br>
+            <label for="prod05">S/.700</label><br>
+            <button class="btn btn-primary" id="btn_prod05" onclick="abrir('prod05.html')">LEER MÁS..</button>
+          </div>
+      </div>
+
+      <div class="col" align="center">
+        <img class="prod" src="src/prod06.jpg">
+        <div class="form-group">
+          <label for="prod06">Xiaomi Mi A2 Lite</label><br>
+          <label for="prod06">S/.500</label><br>
+          <button class="btn btn-primary" id="btn_prod06" onclick="abrir('prod06.html')">LEER MÁS..</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <img src="src/anuncio-tienda.png" id='anuntien'>
+    </div>
+
+    <div class="row bg-dark pt-5 pl-2 pr-2 pb-2 justify-content-center" id="pie">
+      <div class="col">
+        <h5>Donaciones:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://atom.io/" target="_blank">Paypal - cta: 958613154</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">BCP - cta: 4562989436646</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Banco de la Nación - 89852</a></li>
+          <li><a class="footer-item" href="https://fontawesome.com/" target="_blank">Scotiabank - cta: 555555</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Recursos de Diseño:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://atom.io/" target="_blank">Software Atom</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Página Iconfinder</a></li>
+          <li><a class="footer-item" href="https://www.iconfinder.com/" target="_blank">Cartillas de Colores</a></li>
+          <li><a class="footer-item" href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+          <li><a class="footer-item" href="https://www.w3.org/" target="_blank">World wide web consortium</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Sigueme en:</h5>
+        <ul>
+          <li><a class="footer-item" href="https://www.facebook.com" target="_blank"><img class="icon" src="src/fb.png">&nbsp Facebook - TECDOCK</a></li>
+          <li><a class="footer-item" href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="icon" src="src/instagram.png">&nbsp Instagram - @tecdock</a></li>
+          <li><a class="footer-item" href="https://twitter.com/?lang=es" target="_blank"><img class="icon" src="src/twitter.png">&nbsp Twitter - @tec.dock</a></li>
+          <li><a class="footer-item" href="https://www.youtube.com/" target="_blank"><img class="icon" src="src/youtube.png">&nbsp Youtube - Canal Principal</a></li>
+          <li><a class="footer-item" href="https://pe.linkedin.com/" target="_blank"><img class="icon" src="src/linkedin.png">&nbsp Linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Información de Contacto:</h5>
+        <ul>
+          <li><a class="footer-item" href=""><img class="icon" src="src/propietario.png">&nbsp TECDOCK</a></li>
+          <li><a class="footer-item" href="https://www.google.com/maps/place/Ferre%C3%B1afe/@-6.637259,-79.799964,14.75z/data=!4m5!3m4!1s0x904c94d6cf0576e7:0x73d7d3c19c97bcd2!8m2!3d-6.6340676!4d-79.7869714" target="_blank">
+            <img class="icon" src="src/house.png">&nbsp Chiclayo - Lambayeque</a></li>
+          <li><a class="footer-item"><img class="icon" src="src/phone.png">&nbsp cel: 950240937</a></li>
+          <li><a class="footer-item" href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#" target="_blank">
+            <img class="icon" src="src/email.png">&nbsp E-mail: tecdock@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="w-100"></div>
+
+      <div class="col col-auto">
+        <h6>©2019 Copyright - Todos los derechos reservados</h6>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    login();
+  </script>
+</body>
+</html>

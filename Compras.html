@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LISTA DE COMPRAS</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>COMPRAS REALIZADAS</h1>
+    <hr>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th>NOMBRE</th>
+              <th>MONTO</th>
+              <th>-</th>
+            </tr>
+          </thead>
+          <tbody id = "tblCompra">
+          </tbody>
+      </table>
+    </div>
+
+    <button type="button" class="btn btn-success" onclick="mostrarCompras()">ACTUALIZAR</button>
+  </div>
+
+  <!-- Script -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
